@@ -1,7 +1,43 @@
 <h1> Web-Automation-Example</h1>
 
+<h2> Setup</h2
 <h6>
 <ol>
+<li>
+  
+install pipenv
+```
+pip install pipenv
+```
+</li>
+<li>
+  
+change directory to the right folder
+```
+cd "some\directory\Web Automation\"
+```
+</li>
+<li>
+  
+install from `requirements.txt` file
+```
+pipenv install -r requirements.txt
+```
+</li>
+<li>
+  
+open the shell
+```
+pipenv shell
+```
+</li>
+<li>
+  
+install from `requirements.txt` file
+```
+pipenv "Download Script.py"
+```
+</li>
 <li> Download the the latest version of chromedriver https://chromedriver.chromium.org/download
 <ul>
 <li> Dont worry even if it is the wrong version the program should tell you</li>
@@ -15,7 +51,7 @@ Current browser version is 89.0.4389.90 with binary path C:\Program Files (x86)\
 </li>
 </ul>
 </li>
-<li> Place the driver into the same file as `Download Script.py`
+<li> Place the driver into the same folder as `Download Script.py`
 <ul>
 <li> Dont worry even if it is the wrong version the program should tell you</li>
 <li> 
