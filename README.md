@@ -42,6 +42,17 @@ Current browser version is 89.0.4389.90 with binary path C:\Program Files (x86)\
 Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 ```
 </li>
+<li>
+  
+File tree look like this:
+```
+└── Web Automation Example
+    ├── README.md
+    ├── Download Script.py
+    ├── chromedriver.exe
+    └── requirements.txt
+```
+</li>
 </ul>
 </li>
 </ol>
