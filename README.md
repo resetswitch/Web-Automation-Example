@@ -1,5 +1,7 @@
 <h1> Web-Automation-Example</h1>
 
+<h2>Setup</h2>
+
 <h3>File Set Up</h3>
 <h6>
 <ol>
