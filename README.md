@@ -15,7 +15,7 @@ Automate that process through Python packages `bs4` and `selenium`.
 <h4>Solution at a Glance</h4>
 <h6>
 
-All the images you can download on this wibsite page, can be saved on your local computer via web automation.
+All the images you can download on this website page, can be saved on your local computer via web automation.
 <ul>
 <li>
 
