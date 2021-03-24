@@ -1,5 +1,33 @@
 <h1> Web-Automation-Example</h1>
 
+<h6>
+  
+Scenario: You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click `Save` on each of the images.
+</h6>
+
+<h6>
+  
+Solution: Instead of downloading each file manually by clicking the `Save` button on fanart.tv for every item and renaming that file to something more readable than `space-jam-566c0e18c9ceb.png` like , I can automate that process through Python packages `bs4` and `selenium`.
+</h6>
+  
+<h2>Diagram</h2>
+<table>
+<tr>
+<td>
+
+<img src=https://github.com/resetswitch/Images_for_Projects/blob/main/Web-Automation-Example/browser-fanart.tv.png width=400 title="fanart.tv">
+</td>
+<td>
+
+<img src=https://github.com/resetswitch/Images_for_Projects/blob/main/Web-Automation-Example/file-explorer.png width=400 title="file explorer">
+</td>
+</tr>
+</table>
+
+<h2>How It Works</h2>
+
+<img src=https://github.com/resetswitch/Images_for_Projects/blob/main/Web-Automation-Example/web-automation-example.svg width=400 title="flow chart">
+
 <h2>Setup</h2>
 
 <h3>File Set Up</h3>
