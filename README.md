@@ -7,7 +7,7 @@
 <ol>
 <li>
   
-Change the arguments of the `fanart_dl` function call in `Download Script.py` to the website and title of your choosing
+Change the arguments of the `fanart_dl` function call in `Download Script.py` to any Movie or TV show URL within https://fanart.tv/ and title of your choosing. Note: `title` is the name that will appear on the filename.
 ```python
  fanart_dl("https://fanart.tv/movie/2300/space-jam/", 
           title = "Space Jam (1996)",
