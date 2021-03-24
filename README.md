@@ -155,7 +155,7 @@ pipenv shell
 </li>
 <li>
   
-install from `requirements.txt` file
+run the `Download Script.py` file
 ```
 pipenv "Download Script.py"
 ```
