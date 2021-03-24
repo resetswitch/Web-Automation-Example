@@ -15,7 +15,17 @@ Automate that process through Python packages `bs4` and `selenium`.
 <h4>Solution at a Glance</h4>
 <h6>
 
-All the images you can download on this wibsite page, can be saved on your local computer. Explore this example website yourself: <a href='https://fanart.tv/movie/2300/space-jam/'>https://fanart.tv/movie/2300/space-jam/</a>
+All the images you can download on this wibsite page, can be saved on your local computer via web automation.
+<ul>
+<li>
+
+Image Left: Website containing image download buttons. Explore this example website yourself: <a href='https://fanart.tv/movie/2300/space-jam/'>https://fanart.tv/movie/2300/space-jam/</a>
+</li>
+<li>
+ 
+Image Right: The files saved in file explorer via web automation.
+</li>
+</ul>
 </h6>
 
 <table>
