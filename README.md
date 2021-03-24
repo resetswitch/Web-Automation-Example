@@ -105,7 +105,7 @@ Current browser version is 89.0.4389.90 with binary path C:\Program Files (x86)\
 </li>
 <li>
   
-File tree look like this:
+File tree should look like this:
 ```
 └── Web Automation Example
     ├── README.md
