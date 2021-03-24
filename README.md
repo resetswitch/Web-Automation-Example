@@ -1,16 +1,23 @@
 <h1> Web-Automation-Example</h1>
 
+<h3>Scenario</h3>
 <h6>
   
-Scenario: You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click `Save` on each of the images.
+You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click `Save` on each of the images.
 </h6>
 
+<h3>Solution</h3>
 <h6>
   
-Solution: Instead of downloading each file manually by clicking the `Save` button on fanart.tv for every item and renaming that file to something more readable than `space-jam-566c0e18c9ceb.png` like , I can automate that process through Python packages `bs4` and `selenium`.
+Instead of downloading each file manually by clicking the `Save` button on fanart.tv for every item and renaming that file to something more readable than `space-jam-566c0e18c9ceb.png` like , I can automate that process through Python packages `bs4` and `selenium`.
 </h6>
   
-<h2>Diagram</h2>
+<h3>Solution at a Glance</h3>
+<h6>
+
+All the images you can download on this wibsite page, can be saved on your local computer.
+</h6>
+
 <table>
 <tr>
 <td>
@@ -28,7 +35,20 @@ Solution: Instead of downloading each file manually by clicking the `Save` butto
 
 <img src=https://github.com/resetswitch/Images_for_Projects/blob/main/Web-Automation-Example/web-automation-example.svg width=400 title="flow chart">
 
+<h3>Phase 1</h3>
+<h6>
+  
+Uses `BeautifulSoup` in the `bs4` package to extract information from the fanart.tv website.
+</h6>
+
+<h3>Phase 2</h3>
+<h6>
+  
+Uses a `webdriver` in the `selenium` package to perform browser actions like clicking and typing on the website fanart.tv. Those files are then saved to a folder, where Python renames each file according to the information extracted in Phase 1 using `BeautifulSoup`.
+</h6>
+
 <h2>Setup</h2>
+
 
 <h3>File Set Up</h3>
 <h6>
