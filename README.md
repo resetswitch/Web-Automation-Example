@@ -71,7 +71,7 @@ Change the arguments of the `fanart_dl` function call in `Download Script.py` to
 <h6>
 <ol>
 <li> If you havent already, download Chrome: <a href='https://www.google.com/chrome/'> https://www.google.com/chrome/<a>
-<li> Download the the latest version of chromedriver https://chromedriver.chromium.org/download
+<li> Download the the latest version of chromedriver: <a href='https://chromedriver.chromium.org/download'> https://chromedriver.chromium.org/download<a>
 <ul>
 <li> Dont worry! Even if it is the wrong version the program should tell you</li>
 <li> 
