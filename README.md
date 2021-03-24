@@ -72,7 +72,7 @@ Change the arguments of the `fanart_dl` function call in `Download Script.py` to
 <ol>
 <li> Download the the latest version of chromedriver https://chromedriver.chromium.org/download
 <ul>
-<li> Dont worry even if it is the wrong version the program should tell you</li>
+<li> Dont worry! Even if it is the wrong version the program should tell you</li>
 <li> 
 Example: You currently have ChromeDriver version 87, but you need 89
   
@@ -85,7 +85,7 @@ Current browser version is 89.0.4389.90 with binary path C:\Program Files (x86)\
 </li>
 <li> Place the driver into the same folder as `Download Script.py`
 <ul>
-<li> Dont worry even if it is the wrong version the program should tell you</li>
+<li> Dont worry! Even if it is the wrong version the program should tell you</li>
 <li> 
   
 ```python
