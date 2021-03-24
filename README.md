@@ -3,13 +3,13 @@
 <h4>Scenario</h4>
 <h6>
   
-You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click `Save` on each of the images.
+You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click the `Save` button below each of the images. They save as under some unpleasant name like `space-jam-566c0e18c9ceb.png`
 </h6>
 
 <h4>Solution</h4>
 <h6>
   
-Instead of downloading each file manually by clicking the `Save` button on fanart.tv for every item and renaming that file to something more readable than `space-jam-566c0e18c9ceb.png` like , I can automate that process through Python packages `bs4` and `selenium`.
+Automate that process through Python packages `bs4` and `selenium`.
 </h6>
   
 <h4>Solution at a Glance</h4>
