@@ -1,18 +1,18 @@
 <h1> Web-Automation-Example</h1>
 
-<h3>Scenario</h3>
+<h4>Scenario</h4>
 <h6>
   
 You love a TV or Movie so much, you would like to download a bunch of related images. You find a website called <a href=fanart.tv>fanart.tv</a>. You search up your favorite TV or Movie, but you have to click `Save` on each of the images.
 </h6>
 
-<h3>Solution</h3>
+<h4>Solution</h4>
 <h6>
   
 Instead of downloading each file manually by clicking the `Save` button on fanart.tv for every item and renaming that file to something more readable than `space-jam-566c0e18c9ceb.png` like , I can automate that process through Python packages `bs4` and `selenium`.
 </h6>
   
-<h3>Solution at a Glance</h3>
+<h4>Solution at a Glance</h4>
 <h6>
 
 All the images you can download on this wibsite page, can be saved on your local computer.
@@ -35,13 +35,13 @@ All the images you can download on this wibsite page, can be saved on your local
 
 <img src=https://github.com/resetswitch/Images_for_Projects/blob/main/Web-Automation-Example/web-automation-example.svg width=400 title="flow chart">
 
-<h3>Phase 1</h3>
+<h4>Phase 1</h4>
 <h6>
   
 Uses `BeautifulSoup` in the `bs4` package to extract information from the fanart.tv website.
 </h6>
 
-<h3>Phase 2</h3>
+<h4>Phase 2</h4>
 <h6>
   
 Uses a `webdriver` in the `selenium` package to perform browser actions like clicking and typing on the website fanart.tv. Those files are then saved to a folder, where Python renames each file according to the information extracted in Phase 1 using `BeautifulSoup`.
@@ -50,7 +50,7 @@ Uses a `webdriver` in the `selenium` package to perform browser actions like cli
 <h2>Setup</h2>
 
 
-<h3>File Set Up</h3>
+<h4>File Set Up</h4>
 <h6>
 <ol>
 <li>
@@ -67,7 +67,7 @@ Change the arguments of the `fanart_dl` function call in `Download Script.py` to
 
 
 
-<h3>Chromedriver Set Up</h3>
+<h4>Chromedriver Set Up</h4>
 <h6>
 <ol>
 <li> Download the the latest version of chromedriver https://chromedriver.chromium.org/download
@@ -111,7 +111,7 @@ File tree look like this:
 
 
 
-<h3>Pipenv Set Up and Running</h3>
+<h4>Pipenv Set Up and Running</h4>
 <h6>
 <ol>
 <li>
