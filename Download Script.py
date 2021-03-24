@@ -1,23 +1,32 @@
 import subprocess
-import requests
 import time
 import random
 import os
 import sys
 import getpass
 
+import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException, SessionNotCreatedException
 
 
 def createFolder(directory, clear=False, autodelete = False):
+    """Creates a folder in the directory, if it doesnt exist. Also deletes some/all files if directed.
+
+    Parameters
+    ----------
+    directory : str
+        A directory to a folder
+    clear : bool, optional
+        Presents user with the option to delete file(s) (default is False)
+    autodelete : bool, optional
+        Presents user with the option to delete all files in the directory without prompting for each file (default is False)"""
     try:
         if not os.path.exists(directory):
             os.makedirs(directory)
         elif os.path.exists(directory) and clear == True:
             for filename in os.listdir(directory):
-                
                 while True:
                     if autodelete == False:
                         user_in = input("For Directory: {}\nDo you wish to Delete {}? y/n (a to auto-delete and q to quit):\n".format(directory, filename)).lower()
@@ -39,6 +48,12 @@ def createFolder(directory, clear=False, autodelete = False):
         print ('Error: Creating directory. ' +  directory)
 
 def delete_crdownload_file(path):
+    """Deletes files in path that have extension .crdownload.
+
+    Parameters
+    ----------
+    path : str
+        A path to a folder that holds files with extension .crdownload"""
     for fname in os.listdir(path):
         if fname.endswith(".crdownload"):
             print("deleted {}".format(fname))
@@ -47,6 +62,14 @@ def delete_crdownload_file(path):
             print("pass {}".format(fname))
 
 def open_browser(download_path_temp, executable_path):
+    """Creates a selenium webdriver instance.
+
+    Parameters
+    ----------
+    download_path_temp : str
+        A path to a folder that will hold image files of groups (ie. HD Logo) until they are renamed appropriately.
+    executable_path : str
+        A path to to the chromedriver.exe"""
     print("Opening/Minimizing Browser")
     options = webdriver.ChromeOptions()
     prefs = {"profile.default_content_settings.popups": 0,
@@ -63,10 +86,14 @@ def open_browser(download_path_temp, executable_path):
         sys.exit(err)
     return driver
             
-def safe_filename_format(string):       
-    '''(string <string>)
-    Takes in a string <string> (not including path) and converts the string to a windows friendly format, omitting
-    any and all reserved character names'''
+def safe_filename_format(string):
+    """Creates a selenium webdriver instance.
+
+    Parameters
+    ----------
+    string : str
+        Takes in a string (not including path) and converts the string to a windows/mac/linux friendly format, omitting
+    any and all reserved characters"""       
     if os.name == "nt": #Windows
         reserved_characters = ["<",">",":","\"","/","\\","|","?", "*"]
         for rs in reserved_characters:
@@ -77,6 +104,19 @@ def safe_filename_format(string):
     return string
             
 def fanart_dl(URL, title = None, download_path = None, download_path_temp = None):
+    """Creates a selenium webdriver instance.
+
+    Parameters
+    ----------
+    URL : str
+        A fanart.tv movie or tv url (i.e. 'https://fanart.tv/movie/2300/space-jam/')
+    title : str, optional
+        Takes in string to prefix the filename (i.e. 'Space Jam (1996)')
+    download_path : str, optional
+        Change the default download path (default is r'/Users/{}/Desktop/TV Art/{}/'.format(username, title+' - TV Art')). Note ending slash.
+    download_path_temp : str
+        Change the default temporary download path (default is r'/Users/{}/Desktop/TV Art/temp/'.format(username)). Note ending slash.
+    """   
 
     #Executable Path for chromedriver.exe
     executable_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'chromedriver.exe')
@@ -142,7 +182,6 @@ def fanart_dl(URL, title = None, download_path = None, download_path_temp = None
     no_download_class = 'artwork'
     
     #Setting up a browser for automation
-
     driver = open_browser(download_path_temp, executable_path)
     driver.minimize_window()
     
