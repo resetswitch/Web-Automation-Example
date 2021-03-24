@@ -89,7 +89,7 @@ Current browser version is 89.0.4389.90 with binary path C:\Program Files (x86)\
 <li> 
   
 ```python
-Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+ SystemExit: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 ```
 </li>
 <li>
